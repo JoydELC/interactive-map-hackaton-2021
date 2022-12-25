@@ -1,0 +1,132 @@
+.map {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info_container {
+  padding: 0 2rem;
+  padding-top: 0;
+  overflow-y: scroll;
+  max-width: 325px;
+  width: 100%;
+  height: 100vh;
+}
+
+.map_container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.desc_container {
+  position: relative;
+  margin-top: 15px;
+}
+
+.cancel_button {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.parksContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 17px;
+}
+
+.park {
+  width: 100%;
+  margin-bottom: 10px;
+  height: 72px;
+}
+
+.infoIconContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 1rem 0;
+  background-color: white;
+}
+
+/* .eventinfo_container {
+  padding: 15px 30px;
+} */
+
+.cardInfo_container {
+  margin-bottom: 25px;
+  max-width: 302px;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+}
+
+.mb_03 {
+  margin-bottom: 1rem;
+}
+.mb_0303 {
+  margin: 1rem;
+}
+
+.admin_container {
+  padding: 2rem;
+}
+
+.admin {
+  background-image: url("../public/Wallpaper.svg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  background-size: "cover";
+  background-position: "center";
+  height: 100vh;
+}
+
+.admin_container_parks {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.admin_top_container {
+  display: flex;
+  gap: 1rem;
+}
+
+.phoneView {
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 5rem;
+  gap: 5rem;
+}
+
+@media screen and (max-width: 1099px) {
+  .map {
+    display: none;
+  }
+  .phoneView {
+    display: flex;
+  }
+}
